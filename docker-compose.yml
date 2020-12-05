@@ -1,0 +1,11 @@
+version: '2'
+services: 
+  webserver1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "simplewebserver:v3"
+    ports: 
+      - "3000:3000"    
+  
+  
